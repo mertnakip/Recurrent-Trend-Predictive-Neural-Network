@@ -4,7 +4,6 @@ from CrossValidation import CrossValidation
 import math
 import numpy as np
 
-
 def print_results(training_results, test_results, model_name):
     conf_mat = training_results[1]
     folder = '/content/drive/MyDrive/PROJECTS/Fire Detector/TrendPredictiveFireDetector_Journal/Results/'
@@ -29,7 +28,6 @@ sensors_considered = ["\'TCB_1 \'", "\'SMB_1 \'", "\'GASB_1\'", "\'GASB_3\'", "\
 data_processor.selected_columns = sensors_considered 
 sensors_considered_int = np.array(range(5))
 
-
 failed_exp = [2, 15, 17]
 bedroom_exp = np.array([3, 4, 5, 6, 21, 22, 23, 24, 25])[:, np.newaxis] #
 
@@ -40,7 +38,6 @@ all_indices = range(y.shape[0])
 # ====================================
 num_sensors = len(sensors_considered)
 predictor_arch = [num_sensors*2, num_sensors, math.ceil(num_sensors/2)]
-
 
 # =========== rTPNN Model ==============
 print('\n ============ rTPNN Model ============')
