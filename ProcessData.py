@@ -3,7 +3,6 @@ import pandas as pd
 import os
 import scipy.io as spio
 
-
 class ProcessData:
     def __init__(self, data_set_directory, columns_to_use):
         self.directory = data_set_directory
