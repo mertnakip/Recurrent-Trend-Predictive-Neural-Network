@@ -75,8 +75,13 @@ class ProcessData:
                 count += 1
             x[-1] = x[-1]/np.max(x[-1])
         
+        rand_samples = sample(range(y.shape[0]), y.shape[0]) 
+        #spio.savemat('rand_indices.mat', {'indices': rand_samples})   
+        '''
+        # To load the previously saved random indices
         rand_samples = spio.loadmat('rand_indices.mat')
         rand_samples = list(rand_samples['indices'][0])
+        '''
         y = y[rand_samples, :]
         time = time[rand_samples, :]
         for j in sensors:
