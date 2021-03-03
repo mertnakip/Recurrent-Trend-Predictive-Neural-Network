@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class Metrics:
     def calc_conf_mat(self, actual, predicted):
 
