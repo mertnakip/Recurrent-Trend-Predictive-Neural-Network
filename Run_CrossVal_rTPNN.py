@@ -20,7 +20,7 @@ def print_results(training_results, test_results, model_name):
 
 # Read and shape data
 print('\n ============ DATASET ============')
-
+ 
 NIST_data_file = 'Dataset'
 
 data_processor = ProcessData(NIST_data_file, [])
