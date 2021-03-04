@@ -5,6 +5,7 @@ from sklearn.metrics import accuracy_score
 import time
 from keras.metrics import BinaryAccuracy
 from keras.optimizers import Adam
+from Metrics import Metrics
 
 class CrossValidation:
     def __init__(self, x, y, relative_time, avaliable_dataset_indices, sensors, model_name, model_is_rTPNN=True, model_is_LSTM=False, model_is_SVM=False, num_fold=10):
@@ -56,7 +57,7 @@ class CrossValidation:
             alarming_time.append(alarming_time_cv)
             execution_time.append(execution_time_cv)
 
-            folder = '/Results/'
+            folder = ''
             print_text = 'CV: ' + str(cnt) + ' Train Accuracy: ' + str(np.mean(accuracy_train[-1])) + ' Mean Accuracy: ' + str(np.mean(accuracy_cv)) + ' False Positive: ' + str(np.mean(conf_mat_cv[0, 1])) + ' False Negative: ' + str(np.mean(conf_mat_cv[1, 0])) + ' Mean Alarm Time: ' + str(np.mean(alarming_time_cv)) + ' \n'
             print(print_text)
 
