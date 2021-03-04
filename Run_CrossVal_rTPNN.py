@@ -6,7 +6,7 @@ import numpy as np
 
 def print_results(training_results, test_results, model_name):
     conf_mat = training_results[1]
-    folder = '/content/drive/MyDrive/PROJECTS/Fire Detector/TrendPredictiveFireDetector_Journal/Results/'
+    folder = ''
     print_text1 = 'Mean Training: ' + str(np.mean(training_results[0])) + ' STD Training: '+ str(np.std(training_results[0])) + ' Mean Test: ' + str(np.mean(test_results[0])) + ' STD Test: '+ str(np.std(test_results[0])) 
     print_text2 = ' True Positive: ' + str(np.mean(np.array(conf_mat)[:, 1, 1])) + ' True Negative: ' + str(np.mean(np.array(conf_mat)[:, 0, 0])) 
     print_text3 = ' False Positive: ' + str(np.mean(np.array(conf_mat)[:, 0, 1])) + ' False Negative: ' + str(np.mean(np.array(conf_mat)[:, 1, 0]))
@@ -21,7 +21,7 @@ def print_results(training_results, test_results, model_name):
 # Read and shape data
 print('\n ============ DATASET ============')
 
-NIST_data_file = '/Dataset'
+NIST_data_file = 'Dataset'
 
 data_processor = ProcessData(NIST_data_file, [])
 sensors_considered = ["\'TCB_1 \'", "\'SMB_1 \'", "\'GASB_1\'", "\'GASB_3\'", "\'GASB_5\'"]#data_processor.find_common_sensors()
