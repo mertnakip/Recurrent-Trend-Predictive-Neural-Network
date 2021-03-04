@@ -46,7 +46,7 @@ class CrossValidation:
 
             accuracy_cv, conf_mat_cv, alarming_time_cv, execution_time_cv = self.test(model, global_train_ind)
             accuracy_train.append(accuracy_cv)
-            conf_mat_train.append(conf_mat_cv)
+            conf_mat_train.append(conf_mat_cv) 
             alarming_time_train.append(alarming_time_cv)
             time_train.append(train_time)
 
