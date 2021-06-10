@@ -16,6 +16,7 @@ r_tpnn = rTPNN(num_features, predictor_arch, activation_name='sigmoid') # num_si
 rTPNN_model = r_tpnn.model
 
 rTPNN_model.fit(x_train, y_train, epochs=num_epochs, batch_size=size_of_a_batch) # equivalent to the "fit" method of a Keras model
+
 prediction = rTPNN_model.predict(x_test)
 
 \# Note that rTPNN model contains all methods and attributes that have been contained by any Keras model.
