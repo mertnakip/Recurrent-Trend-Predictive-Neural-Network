@@ -9,7 +9,9 @@ Note that it is an particular implementation of rTPNN model and it may be implem
 
 from rTPNN import rTPNN
 
-r_tpnn = rTPNN(num_features, predictor_arch, activation_name='sigmoid') # num_signals: total number of time series features; predictor_arch: a list of number of neurons for fully connected layers (len(predictor_arch) = number of layers; predictor_arch[0] = number of neurons at the first fully connected layer)
+r_tpnn = rTPNN(num_features, predictor_arch, activation_name='sigmoid')  
+\# num_signals: total number of time series features  
+\# predictor_arch: a list of number of neurons for fully connected layers (len(predictor_arch) = number of layers; predictor_arch[0] = number of neurons at the first fully connected layer)
 
 rTPNN_model = r_tpnn.model  
 rTPNN_model.fit(x_train, y_train, epochs=num_epochs, batch_size=size_of_a_batch) # equivalent to the "fit" method of a Keras model  
