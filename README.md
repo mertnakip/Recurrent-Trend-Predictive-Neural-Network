@@ -4,4 +4,6 @@ This repository contains the codes of the Keras implementation of the Recurrent 
 
 
 # Citation Request
-The content of this repository (including rTPNN and multi-sensor fire detection together) has been published as "Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection" journal paper on IEEE Access.
+The rTPNN as well as its application on multi-sensor fire detection has been published as a journal paper which is entitled as "Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection" on IEEE Access. If you use rTPNN architectur or the content of this repository, please cite the following our paper as follows: 
+
+
