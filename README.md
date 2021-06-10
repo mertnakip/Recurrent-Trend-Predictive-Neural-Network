@@ -19,8 +19,8 @@ prediction = rTPNN_model.predict(x_test)
 
 \# Note that rTPNN model contains all methods and attributes that have been contained by any Keras model.
 
-\# x_train is a list of time series data (len(x_train) = num_features; x_train[0]: numpy array; x_train[0].shape = (num_train_samples, num_past))  
-\# Similarly, x_test is a list of time series data (len(x_test) = num_features; x_test[0]: numpy array; x_test[0].shape = (num_test_samples, num_past)) 
+\# x_train is a list of time series data (len(x_train) = num_features; x_train[0]: numpy array; x_train[0].shape = (num_train_samples, num_past=2, 1))  
+\# Similarly, x_test is a list of time series data (len(x_test) = num_features; x_test[0]: numpy array; x_test[0].shape = (num_test_samples, num_past=2, 1)) 
  
 
 ## Citation Request
