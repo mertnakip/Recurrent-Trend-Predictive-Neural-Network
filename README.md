@@ -41,9 +41,9 @@ prediction = rTPNN_model.predict(x_test)
  
 ## An example of rTPNN on Random Data
 
-import numpy as np
-from ConvertDataForRTPNN import convert_data_for_rTPNN
-from rTPNN import rTPNN
+import numpy as np  
+from ConvertDataForRTPNN import convert_data_for_rTPNN  
+from rTPNN import rTPNN  
 
 T = 100
 I = 5
