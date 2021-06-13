@@ -2,6 +2,8 @@
 
 # Recurrent Trend Predictive Network with Application to Multi-Sensor Fire Detection
 
+![alt text](https://www.researchgate.net/publication/352306006/figure/fig1/AS:1033351641178112@1623381638542/The-architecture-of-the-Recurrent-Trend-Predictive-Neural-Network-rTPNN_W640.jpg)
+
 This repository contains the codes of the Keras implementation of the Recurrent Trend Predictive Neural Network (rTPNN) model, as well as an example for the multi-sensor fire detection in the folder CrossValidationOnFireDataset.
 
 You may find the more detailed explanation of the methodology as well as the results in our publication at https://ieeexplore.ieee.org/document/9451553.
