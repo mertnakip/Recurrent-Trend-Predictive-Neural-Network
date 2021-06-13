@@ -8,6 +8,15 @@ You may find the more detailed explanation of the methodology as well as the res
 
 Note that it is an particular implementation of rTPNN model and it may be implemented in different ways.
 
+## (Classic) Numpy Array Input To List which is Desired by (this implementation of) rTPNN
+
+from ConvertDataForRTPNN import convert_data_for_rTPNN
+
+x_list = convert_data_for_rTPNN(x)
+
+Provide array "x" to "convert_data_for_rTPNN" as shown in the following figure. 
+
+![alt text](https://www.researchgate.net/publication/352306006/figure/fig3/AS:1033351641198595@1623381638599/The-dimensions-of-the-input-tensor-and-output-vector-of-rTPNN-in-the-case-where-all_W640.jpg)
 
 ## Usage of rTPNN 
 
