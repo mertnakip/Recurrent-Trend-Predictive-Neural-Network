@@ -62,7 +62,7 @@ prediction = rTPNN_model.predict(x_list)
 ## Citation Request
 The rTPNN as well as its application on multi-sensor fire detection has been published as a journal paper which is entitled as "Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection" on IEEE Access. If you use rTPNN architectur or the content of this repository, please cite the following our paper as follows: 
 
-@ARTICLE{9451553,  
+@ARTICLE{nakip2021rTPNN,  
   author={Nakip, Mert and Güzelíş, Cüneyt and Yildiz, Osman},  
   journal={IEEE Access},  
   title={Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection},  
