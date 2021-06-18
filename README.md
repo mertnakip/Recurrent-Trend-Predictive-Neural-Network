@@ -67,8 +67,8 @@ The rTPNN as well as its application on multi-sensor fire detection has been pub
   journal={IEEE Access},  
   title={Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection},  
   year={2021},  
-  volume={},  
+  volume={9},  
   number={},  
-  pages={1-1},  
+  pages={84204-84216},  
   doi={10.1109/ACCESS.2021.3087736}  
   }
