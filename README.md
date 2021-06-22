@@ -48,8 +48,7 @@ from rTPNN import rTPNN
 T = 100
 I = 5
 
-x = np.random.rand(T, 2, I)
-
+x = np.random.rand(T, 2, I)  
 y = np.random.rand(T)
 
 x_list = convert_data_for_rTPNN(x)
