@@ -60,7 +60,7 @@ rTPNN_model.fit(x_list, y, epochs=10, batch_size=20, verbose=0)
 prediction = rTPNN_model.predict(x_list)
 
 ## Citation Request
-The rTPNN as well as its application on multi-sensor fire detection has been published as a journal paper which is entitled as "Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection" on IEEE Access. If you use rTPNN architectur or the content of this repository, please cite the following our paper as follows: 
+The rTPNN as well as its application on multi-sensor fire detection has been published as a journal paper which is entitled as "Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection" on IEEE Access. If you use rTPNN architecture or the content of this repository, please cite our following paper as follows: 
 
 @ARTICLE{nakip2021rTPNN,  
   author={Nakip, Mert and Güzelíş, Cüneyt and Yildiz, Osman},  
