@@ -29,7 +29,7 @@ r_tpnn = rTPNN(num_features, predictor_arch, activation_name='sigmoid')
 \# predictor_arch: a list of number of neurons for fully connected layers (len(predictor_arch) = number of layers; predictor_arch[0] = number of neurons at the first fully connected layer)
 
 rTPNN_model = r_tpnn.model  
-rTPNN_model.compile(optimizer='adam', loss='mse') 
+rTPNN_model.compile(optimizer='adam', loss='mse')  
 rTPNN_model.fit(x_train, y_train, epochs=num_epochs, batch_size=size_of_a_batch) # equivalent to the "fit" method of a Keras model  
 prediction = rTPNN_model.predict(x_test) 
 
