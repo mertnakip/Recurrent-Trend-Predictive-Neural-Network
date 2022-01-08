@@ -43,7 +43,7 @@ import numpy as np
 from ConvertDataForRTPNN import convert_data_for_rTPNN  
 from rTPNN import rTPNN  
 
-T = 100 
+T = 100; 
 I = 5
 
 x = np.random.rand(T, 2, I)  
