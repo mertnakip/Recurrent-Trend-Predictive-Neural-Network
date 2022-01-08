@@ -23,7 +23,7 @@ Provide array "x" to "convert_data_for_rTPNN" as shown in the following figure.
 from rTPNN import rTPNN
 
 r_tpnn = rTPNN(num_features, predictor_arch, activation_name='sigmoid')  
-\# num_signals: total number of time series features  
+\# num_features: total number of time series features  
 \# predictor_arch: a list of number of neurons for fully connected layers (len(predictor_arch) = number of layers; predictor_arch[0] = number of neurons at the first fully connected layer)
 
 rTPNN_model = r_tpnn.model  
