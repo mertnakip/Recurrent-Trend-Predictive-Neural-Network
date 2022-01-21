@@ -1,4 +1,4 @@
-# Recurrent Trend Predictive Network with Application to Multi-Sensor Fire Detection
+# Recurrent Trend Predictive Neural Network with Application to Multi-Sensor Fire Detection
 
 ![alt text](https://www.researchgate.net/publication/352306006/figure/fig1/AS:1033351641178112@1623381638542/The-architecture-of-the-Recurrent-Trend-Predictive-Neural-Network-rTPNN_W640.jpg)
 
