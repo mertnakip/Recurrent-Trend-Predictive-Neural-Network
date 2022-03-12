@@ -22,7 +22,7 @@ from keras import Model
 from rTPNN_layer import rTPNN  
 
 
-### Random Data
+###### Random Data
 
 num_samples = 100; 
 num_features = 5
@@ -33,11 +33,11 @@ y = np.random.rand(num_samples)
 
 
 
-### Create an rTPNN Model
+###### Create an rTPNN Model
 
 input_layer = Input(input_shape=(2, num_features, ))
 
-rtpnn_layer = rTPNN()(input_layer)
+**rtpnn_layer = rTPNN()(input_layer)**
 
 fullyconnected_layer = Dense(num_features, activation='relu')(rtpnn_layer)
 
@@ -49,12 +49,12 @@ rTPNN_model = Model(inputs=[input_layer], outputs=[output_layer])
 rTPNN_model.compile(optimizer='adam', loss='mse')  
 
 
-### Train the Model
+###### Train the Model
 
 rTPNN_model.fit(x, y, epochs=10, batch_size=20, verbose=0)  
 
 
-### Make Prediction
+###### Make Prediction
 
 
 prediction = rTPNN_model.predict(x) 
