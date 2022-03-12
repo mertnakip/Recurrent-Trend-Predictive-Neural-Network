@@ -10,4 +10,4 @@ Here are some contibutions that you can make:
 
 **Creating implementations of rTPNN using different libraries (or languages), such as PyTorch**
 
-**Sharig different applications of rTPNN** 
+**Sharing different applications of rTPNN** 
