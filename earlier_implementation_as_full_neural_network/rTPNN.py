@@ -36,7 +36,7 @@ class rTPNN:
             level_predictor.append(x_k)
             level_predictor[-1] = SimpleRNN(1, activation=None, use_bias=False)(level_predictor[-1])
 
-            #SDP Dense Neuron
+            #SDP Output
             outputs_SDP.append(Concatenate()([trend_predictor[-1], level_predictor[-1], Reshape((1,))(x_k)]))
         return inputs_SDP, outputs_SDP
 
