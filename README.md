@@ -37,22 +37,30 @@ Create an rTPNN Model
 '''
 
 input_layer = Input(input_shape=(2, num_features, ))
+
 rtpnn_layer = rTPNN()(input_layer)
+
 fullyconnected_layer = Dense(num_features, activation='relu')(rtpnn_layer)
+
 output_layer = Dense(1, activation='relu')(fullyconnected_layer)
 
+
 rTPNN_model = Model(inputs=[input_layer], outputs=[output_layer])
+
 rTPNN_model.compile(optimizer='adam', loss='mse')  
+
 
 '''
 Train the Model
 '''
+
 rTPNN_model.fit(x, y, epochs=10, batch_size=20, verbose=0)  
 
 
 '''
 Make Prediction
 '''
+
 prediction = rTPNN_model.predict(x) 
 
 ## Citation Request 
