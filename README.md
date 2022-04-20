@@ -54,9 +54,7 @@ rTPNN_model.compile(optimizer='adam', loss='mse')
 rTPNN_model.fit(x, y, epochs=10, batch_size=1, verbose=0) 
 
 '''
-
 As long as the data samples are time series, batch_size=1 should be used to get the most out of trend prediction.
-
 '''
 
 
