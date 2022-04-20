@@ -1,7 +1,7 @@
 from keras.layers import Lambda, SimpleRNN, Concatenate, Subtract, Reshape
 
 class rTPNN:
-    def __init__(stateful=True):
+    def __init__(self, stateful=True):
         self.stateful=stateful
         
     def __call__(self, inputs):
