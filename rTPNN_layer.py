@@ -1,9 +1,6 @@
 from keras.layers import Lambda, SimpleRNN, Concatenate, Subtract, Reshape
 
-class rTPNN:
-    #def __init__(self, stateful=True):
-    #    self.stateful=stateful
-        
+class rTPNN:        
     def __call__(self, inputs):
         """
         Inputs: 3D array with dimensions (Sample Size X 2 X Number of Features)
@@ -23,11 +20,11 @@ class rTPNN:
 
             #Trend Predictor
             trend_predictor.append(Subtract()([x_k, x_k1]))
-            trend_predictor[-1] = SimpleRNN(1, activation=None, use_bias=False, stateful=True)(trend_predictor[-1])
+            trend_predictor[-1] = SimpleRNN(1, activation=None, use_bias=False)(trend_predictor[-1])
 
             #Level Predictor
             level_predictor.append(x_k)
-            level_predictor[-1] = SimpleRNN(1, activation=None, use_bias=False, stateful=True)(level_predictor[-1])
+            level_predictor[-1] = SimpleRNN(1, activation=None, use_bias=False)(level_predictor[-1])
 
             #DP Dense Neuron
             outputs_DP.append(Concatenate()([trend_predictor[-1], level_predictor[-1], Reshape((1,))(x_k)]))
