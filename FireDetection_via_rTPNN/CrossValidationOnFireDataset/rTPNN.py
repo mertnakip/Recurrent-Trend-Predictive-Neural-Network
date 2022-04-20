@@ -30,11 +30,11 @@ class rTPNN:
 
             #Trend Predictor
             trend_predictor.append(Subtract()([x_k, x_k1]))
-            trend_predictor[-1] = SimpleRNN(1, activation=None, use_bias=False)(trend_predictor[-1])
+            trend_predictor[-1] = SimpleRNN(1, activation=None, use_bias=False, stateful=True)(trend_predictor[-1])
 
             #Level Predictor
             level_predictor.append(x_k)
-            level_predictor[-1] = SimpleRNN(1, activation=None, use_bias=False)(level_predictor[-1])
+            level_predictor[-1] = SimpleRNN(1, activation=None, use_bias=False, stateful=True)(level_predictor[-1])
 
             #SDP Dense Neuron
             outputs_SDP.append(Concatenate()([trend_predictor[-1], level_predictor[-1], Reshape((1,))(x_k)]))
