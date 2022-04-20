@@ -53,15 +53,15 @@ rTPNN_model.compile(optimizer='adam', loss='mse')
 
 rTPNN_model.fit(x, y, epochs=10, batch_size=1, verbose=0) 
 
-'''
-As long as the data samples are time series, batch_size=1 should be used to get the most out of trend prediction.
-'''
-
 
 ###### Make Prediction
 
 
-prediction = rTPNN_model.predict(x) 
+prediction = rTPNN_model.predict(x, batch_size=1) 
+
+
+Note: As long as the data samples are time series, batch_size=1 should be used to get the most out of trend prediction.
+
 
 ## Citation Request 
 The rTPNN as well as its application on multi-sensor fire detection has been published as a journal paper which is entitled as "Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection" on IEEE Access. If you use rTPNN or the content of this repository, please cite our following paper as follows: 
