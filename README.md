@@ -35,7 +35,7 @@ y = np.random.rand(num_samples)
 
 ###### Create an rTPNN Model
 
-input_layer = Input(batch_input_shape=(1, 2, num_features))
+input_layer = Input(input_shape=(2, num_features,))
 
 **rtpnn_layer = rTPNN()(input_layer)**
 
@@ -51,7 +51,7 @@ rTPNN_model.compile(optimizer='adam', loss='mse')
 
 ###### Train the Model
 
-rTPNN_model.fit(x, y, epochs=10, batch_size=1, verbose=0) 
+rTPNN_model.fit(x, y, epochs=10, batch_size=20, verbose=0) 
 
 
 ###### Make Prediction
@@ -59,8 +59,6 @@ rTPNN_model.fit(x, y, epochs=10, batch_size=1, verbose=0)
 
 prediction = rTPNN_model.predict(x, batch_size=1) 
 
-
-Note: As long as the data samples are time series, batch_size=1 should be used to get the most out of trend prediction. However, you may also prefer to use with higher batch as well. 
 
 
 ## Citation Request 
