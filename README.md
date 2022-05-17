@@ -51,7 +51,9 @@ rTPNN_model.compile(optimizer='adam', loss='mse')
 
 ###### Train the Model
 
-rTPNN_model.fit(x, y, epochs=10, batch_size=20, verbose=0) # batch_size determines the time interval for the update of recurrence. "The last state for each sample at index i in a batch will be used as initial state for the sample of index i in the following batch." [https://keras.io/api/layers/recurrent_layers/simple_rnn/]
+rTPNN_model.fit(x, y, epochs=10, batch_size=20, verbose=0) 
+
+# batch_size determines the time interval for the update of recurrence. "The last state for each sample at index i in a batch will be used as initial state for the sample of index i in the following batch." [https://keras.io/api/layers/recurrent_layers/simple_rnn/]
 
 
 ###### Make Prediction
