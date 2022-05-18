@@ -4,7 +4,7 @@ authors:
   - family-names: Nakıp
     given-names: Mert
     orcid: https://orcid.org/0000-0002-6723-6494
-title: "Recurrent Trend Predictive Neural Network - Keras Implementation"
-version: 2.0.0
-doi: 
-date-released: 2021-06-06
+title: "Recurrent Trend Predictive Neural Network"
+version: 1.0.0
+doi: 10.5281/zenodo.6560245
+date-released: 2022-05-18
