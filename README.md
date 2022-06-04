@@ -1,7 +1,7 @@
 # Recurrent Trend Predictive Neural Network
 
 
-![Alt text](TPNN-FireDetector.jpg?raw=true "Title")
+![Alt text](Figures/rTPNN-FireDetector.jpg?raw=true "Title")
 
 This repository contains the implementation of the Recurrent Trend Predictive Neural Network (rTPNN) model as a Keras layer. In addition, it also contains an application of rTPNN for the multi-sensor fire detection in the folder FireDetection_via_rTPNN.
 
