@@ -13,7 +13,7 @@ Note that it is an particular implementation of rTPNN, and it may be implemented
 
 Provide input array "x" as shown in the following figure. 
 
-![Alt text](Figures/Tensor.jpg?raw=true "Title")
+![Alt text](Figures/Tensor.PNG?raw=true "Title")
 
 
 ## An example usage of rTPNN 
