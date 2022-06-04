@@ -13,7 +13,8 @@ Note that it is an particular implementation of rTPNN, and it may be implemented
 
 Provide input array "x" as shown in the following figure. 
 
-![alt text](https://www.researchgate.net/publication/352306006/figure/fig3/AS:1033351641198595@1623381638599/The-dimensions-of-the-input-tensor-and-output-vector-of-rTPNN-in-the-case-where-all_W640.jpg)
+![Alt text](Figures/Tensor.jpg?raw=true "Title")
+
 
 ## An example usage of rTPNN 
 
