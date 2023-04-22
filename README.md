@@ -24,3 +24,19 @@ Forecasting Layer is responsible for forecasting the power generation within the
 
 
 The Scheduling Layer consists of $N$ parallel softmax layers, each responsible for generating a schedule for a single device's start time. Since this layer is cascaded behind the Forecasting Layer, each device $n$ is scheduled to be started at each slot $s$ based on the output of the Forecasting Layer $\hat{g}^{m_s}$ as well as the system parameters $c_{(n,s)}$, $E_n$, $B$, $B_{max}$ and $\Theta$ for this device $n$ and this slot $s$.  
+
+
+
+## Citation
+
+```
+@article{NAKIP2023121014,
+  title = {Renewable energy management in smart home environment via forecast embedded scheduling based on Recurrent Trend Predictive Neural Network},
+  journal = {Applied Energy},
+  volume = {340},
+  pages = {121014},
+  year = {2023},
+  issn = {0306-2619},
+  doi = {https://doi.org/10.1016/j.apenergy.2023.121014},
+  url = {https://www.sciencedirect.com/science/article/pii/S0306261923003781}
+}```
