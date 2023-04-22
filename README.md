@@ -1,81 +1,26 @@
-# Recurrent Trend Predictive Neural Network
+# Recurrent Trend Predictive Neural Network based Forecast Embedded Scheduling
 
 
-![Alt text](Figures/rTPNN-FireDetector.jpg?raw=true "Title")
+![Alt text](figures/rtpnn_fes.jpg?raw=true "Title")
 
-This repository contains the implementation of the Recurrent Trend Predictive Neural Network (rTPNN) model as a Keras layer. In addition, it also contains an application of rTPNN for the multi-sensor fire detection in the folder FireDetection_via_rTPNN.
+This repository contains the implementation of the Recurrent Trend Predictive Neural Network based Forecast Embedded Scheduling (rTPNN-FES) model.  rTPNN-FES is a novel neural network architecture that simultaneously forecasts renewable energy generation and schedules household appliances. By its embedded structure, rTPNN-FES eliminates the utilization of separate algorithms for forecasting and scheduling and generates a schedule that is robust against forecasting errors. 
 
-You may find the more detailed explanation of the methodology as well as the results in our publication at https://ieeexplore.ieee.org/document/9451553.
-
-Note that it is an particular implementation of rTPNN, and it may be implemented in different ways.
-
-## Inputs for rTPNN Layer
-
-Provide input array "x" as shown in the following figure. 
-
-![Alt text](Figures/Tensor.PNG?raw=true "Title")
+You may find the more detailed explanation of the methodology as well as the results in our publication at https://www.sciencedirect.com/science/article/pii/S0306261923003781.
 
 
-## An example usage of rTPNN 
-
-import numpy as np  
-from keras.layers import Input, Dense
-from keras import Model
-from rTPNN_layer import rTPNN  
+## Forecasting Layer
 
 
-###### Random Data
-
-num_samples = 100; 
-num_features = 5
-
-x = np.random.rand(num_samples, 2, num_features)  
-y = np.random.rand(num_samples) 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/146jvz5zUx1DiELXhfQiIBk1kWFOXxLtz?usp=sharing)
 
 
+Forecasting Layer is responsible for forecasting the power generation within the architecture of rTPNN-FES. For each slot $s$ in the scheduling window, rTPNN-FES forecasts the renewable energy generation $\hat{g}^{m_s}$ based on the collection of the past feature values for two periods, $\{z^{m_s - 2\tau_f}_f, z^{m_s - \tau_f}_f\}_{f \in \mathcal{F}}$, as well as the past generation for two periods $\{g^{m_s - 2\tau_0}, g^{m_s - \tau_0}\}$.
 
 
-###### Create an rTPNN Model
-
-input_layer = Input(input_shape=(2, num_features,))
-
-**rtpnn_layer = rTPNN()(input_layer)**
-
-fullyconnected_layer = Dense(num_features, activation='relu')(rtpnn_layer)
-
-output_layer = Dense(1, activation='relu')(fullyconnected_layer)
+## Scheduling Layer
 
 
-rTPNN_model = Model(inputs=[input_layer], outputs=[output_layer])
-
-rTPNN_model.compile(optimizer='adam', loss='mse')  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1eH0M75-jUh4wZOncQnCAn-Q4JmfCHWWd?usp=sharing)
 
 
-###### Train the Model
-
-rTPNN_model.fit(x, y, epochs=10, batch_size=20, verbose=0) 
-
-'''
-batch_size determines the time interval for the update of recurrence. "The last state for each sample at index i in a batch will be used as initial state for the sample of index i in the following batch." [https://keras.io/api/layers/recurrent_layers/simple_rnn/]
-'''
-
-###### Make Prediction
-
-
-prediction = rTPNN_model.predict(x, batch_size=1) 
-
-
-
-## Citation Request 
-The rTPNN as well as its application on multi-sensor fire detection has been published as a journal paper which is entitled as "Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection" on IEEE Access. If you use rTPNN or the content of this repository, please cite our following paper (along with the repository citation) as follows: 
-
-@ARTICLE{nakip2021rTPNN,  
-  author={Nakip, Mert and Güzeliş, Cüneyt and Yildiz, Osman},  
-  journal={IEEE Access},  
-  title={Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection},  
-  year={2021},  
-  volume={9},  
-  number={},  
-  pages={84204-84216},  
-  doi={10.1109/ACCESS.2021.3087736}  
-  }
+The Scheduling Layer consists of $N$ parallel softmax layers, each responsible for generating a schedule for a single device's start time. Since this layer is cascaded behind the Forecasting Layer, each device $n$ is scheduled to be started at each slot $s$ based on the output of the Forecasting Layer $\hat{g}^{m_s}$ as well as the system parameters $c_{(n,s)}$, $E_n$, $B$, $B_{max}$ and $\Theta$ for this device $n$ and this slot $s$.  
