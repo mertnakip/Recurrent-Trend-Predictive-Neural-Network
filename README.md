@@ -39,4 +39,5 @@ The Scheduling Layer consists of $N$ parallel softmax layers, each responsible f
   issn = {0306-2619},
   doi = {https://doi.org/10.1016/j.apenergy.2023.121014},
   url = {https://www.sciencedirect.com/science/article/pii/S0306261923003781}
-}```
+}
+```
