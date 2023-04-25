@@ -30,7 +30,7 @@ The Scheduling Layer consists of $N$ parallel softmax layers, each responsible f
 ## Citation
 
 ```
-@article{NAKIP2023121014,
+@article{NAKIP_rTPNN_FES,
   title = {Renewable energy management in smart home environment via forecast embedded scheduling based on Recurrent Trend Predictive Neural Network},
   journal = {Applied Energy},
   volume = {340},
