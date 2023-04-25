@@ -65,6 +65,13 @@ batch_size determines the time interval for the update of recurrence. "The last 
 prediction = rTPNN_model.predict(x, batch_size=1) 
 
 
+## Applications of rTPNN
+
+
+Fire Detection: https://github.com/mertnakip/Recurrent-Trend-Predictive-Neural-Network/tree/main/FireDetection_via_rTPNN 
+
+Energy Management and Forecasting: https://github.com/mertnakip/Recurrent-Trend-Predictive-Neural-Network/tree/rtpnn_sef 
+
 
 ## Citation Request 
 The rTPNN as well as its application on multi-sensor fire detection has been published as a journal paper which is entitled as "Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection" on IEEE Access. If you use rTPNN or the content of this repository, please cite our following paper (along with the repository citation) as follows: 
