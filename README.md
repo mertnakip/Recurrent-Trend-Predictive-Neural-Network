@@ -19,8 +19,8 @@ Provide input array "x" as shown in the following figure.
 ## An example usage of rTPNN 
 
 import numpy as np  
-from keras.layers import Input, Dense 
-from keras import Model 
+from keras.layers import Input, Dense  
+from keras import Model  
 from rTPNN_layer import rTPNN  
 
 
