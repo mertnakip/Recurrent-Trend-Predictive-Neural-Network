@@ -88,3 +88,21 @@ The rTPNN as well as its application on multi-sensor fire detection has been pub
   doi={10.1109/ACCESS.2021.3087736}  
   }
   ```
+
+## Additional References 
+
+###### rTPNN_FES Architecture for Energy Management
+
+```
+@article{NAKIP_rTPNN_FES,
+  title = {Renewable energy management in smart home environment via forecast embedded scheduling based on Recurrent Trend Predictive Neural Network},
+  author={Nak{\i}p, Mert and {\c{C}}opur, Onur and Biyik, Emrah and G{\"u}zeli{\c{s}}, C{\"u}neyt},
+  journal = {Applied Energy},
+  volume = {340},
+  pages = {121014},
+  year = {2023},
+  issn = {0306-2619},
+  doi = {https://doi.org/10.1016/j.apenergy.2023.121014},
+  url = {https://www.sciencedirect.com/science/article/pii/S0306261923003781}
+}
+```
