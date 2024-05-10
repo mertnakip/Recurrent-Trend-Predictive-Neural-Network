@@ -3,7 +3,8 @@
 
 This repository contains the implementation of the the e-rTPNN decision system. This model leverages the Recurrent Trend Predictive Neural Network (rTPNN) combined with online transfer learning for electronic nose (e-Nose) applications.
 
-The detailed explanation of the architecture and comparative results on wine and COPD e-Nose datasets can be found in our published article [link](link).
+The detailed explanation of the architecture and comparative results on wine and COPD e-Nose datasets can be found in our published article 
+[link](link).
 
 ## Prepare the datasets
 ### Wine Dataset
@@ -11,16 +12,16 @@ Download the wine dataset from https://data.mendeley.com/datasets/vpc887d53s/3 a
 
 Run the following code, which will create Wine_Dataset_All folder and file_list.npy files
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](add link)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12rwM16-W9wisFp0GtgZUDR4CVVdWLf_H?usp=sharing)
 
 ### COPD Dataset
 Download the COPD dataset from [https://data.mendeley.com/datasets/vpc887d53s/3](https://data.mendeley.com/datasets/h5pcn99zw4/4) and put it under COPD_dataset folder in google drive
 
 Run the following code, which will create COPD_Dataset_All folder and file_list.npy files
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](add link)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1tJ-gwzBhwUCaw3vxui_xX_DjtJFDL2mZ?usp=sharing)
 
-## Train e-rtpnn
+## Train e-rTPNN
 For online training to be performed after the offline training, Set the online_only array:
 
 `online_only = [False, False, False, False, False]`
@@ -34,3 +35,8 @@ To perform the online training only, Set the online_only array:
 
 ### Train e-rtpnn on COPD Dataset
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bikva_wEF_2qyhIpqVzfGwWw9986y08x?usp=sharing)
+
+## Citation
+```
+
+```
