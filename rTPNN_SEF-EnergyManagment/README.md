@@ -14,7 +14,7 @@ You may find a more detailed explanation of the methodology as well as the resul
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/146jvz5zUx1DiELXhfQiIBk1kWFOXxLtz?usp=sharing)
 
 
-Forecasting Layer is responsible for forecasting the power generation within the architecture of rTPNN-FES. For each slot $s$ in the scheduling window, rTPNN-FES forecasts the renewable energy generation $\hat{g}^{m_s}$ based on the collection of the past feature values for two periods, $z^{m_s - 2 \tau_f}_f, z^{m_s -\tau_f}_f$, as well as the past generation for two periods $\{g^{m_s - 2\tau_0}, g^{m_s - \tau_0}\}$.
+Forecasting Layer is responsible for forecasting the power generation within the architecture of rTPNN-FES. For each slot $s$ in the scheduling window, rTPNN-FES forecasts the renewable energy generation $\hat{g}^{m_s}$ based on the collection of the past feature values for two periods, $\{z^{m_s - 2 \tau_f}_f, z^{m_s -\tau_f}_f\} _{f \in \mathcal{F}}$, as well as the past generation for two periods $\{g^{m_s - 2\tau_0}, g^{m_s - \tau_0}\}$.
 
 
 ## Scheduling Layer
