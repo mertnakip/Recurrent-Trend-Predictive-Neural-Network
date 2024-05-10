@@ -5,7 +5,7 @@
 
 This repository contains the implementation of the Recurrent Trend Predictive Neural Network based Forecast Embedded Scheduling (rTPNN-FES) model.  rTPNN-FES is a novel neural network architecture that simultaneously forecasts renewable energy generation and schedules household appliances. By its embedded structure, rTPNN-FES eliminates the utilization of separate algorithms for forecasting and scheduling and generates a schedule that is robust against forecasting errors. 
 
-You may find the more detailed explanation of the methodology as well as the results in our publication at https://www.sciencedirect.com/science/article/pii/S0306261923003781.
+You may find a more detailed explanation of the methodology as well as the results in our publication at https://www.sciencedirect.com/science/article/pii/S0306261923003781.
 
 
 ## Forecasting Layer
@@ -42,3 +42,17 @@ The Scheduling Layer consists of $N$ parallel softmax layers, each responsible f
   url = {https://www.sciencedirect.com/science/article/pii/S0306261923003781}
 }
 ```
+
+```
+@ARTICLE{nakip2021rTPNN,  
+  author={Nakip, Mert and Güzeliş, Cüneyt and Yildiz, Osman},  
+  journal={IEEE Access},  
+  title={Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection},  
+  year={2021},  
+  volume={9},  
+  number={},  
+  pages={84204-84216},  
+  doi={10.1109/ACCESS.2021.3087736}  
+  }
+  ```
+
