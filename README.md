@@ -3,11 +3,11 @@
 
 ![Alt text](Figures/rTPNN-FireDetector.jpg?raw=true "Title")
 
-This repository contains the implementation of the Recurrent Trend Predictive Neural Network (rTPNN) model as a Keras layer. In addition, it also contains an application of rTPNN for the multi-sensor fire detection in the folder FireDetection_via_rTPNN.
+This repository contains the implementation of the Recurrent Trend Predictive Neural Network (rTPNN) model as a Keras layer. In addition, it also contains an application of rTPNN for multi-sensor fire detection in the folder FireDetection_via_rTPNN.
 
-You may find the more detailed explanation of the methodology as well as the results in our publication at https://ieeexplore.ieee.org/document/9451553.
+You may find a more detailed explanation of the methodology as well as the results in our publication at https://ieeexplore.ieee.org/document/9451553.
 
-Note that it is an particular implementation of rTPNN, and it may be implemented in different ways.
+Note that it is a particular implementation of rTPNN, and it may be implemented in different ways.
 
 ## Inputs for rTPNN Layer
 
@@ -74,7 +74,7 @@ Energy Management and Forecasting: https://github.com/mertnakip/Recurrent-Trend-
 
 
 ## Citation Request 
-The rTPNN as well as its application on multi-sensor fire detection has been published as a journal paper which is entitled as "Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection" on IEEE Access. If you use rTPNN or the content of this repository, please cite our following paper (along with the repository citation) as follows: 
+The rTPNN, as well as its application on multi-sensor fire detection, has been published as a journal paper which is entitled "Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection" in IEEE Access. If you use rTPNN or the content of this repository, please cite our following paper (along with the repository citation) as follows: 
 
 ```
 @ARTICLE{nakip2021rTPNN,  
@@ -91,7 +91,7 @@ The rTPNN as well as its application on multi-sensor fire detection has been pub
 
 ## Additional References 
 
-###### rTPNN_FES Architecture for Energy Management
+###### rTPNN-FES Architecture for Energy Management
 
 ```
 @article{NAKIP_rTPNN_FES,
