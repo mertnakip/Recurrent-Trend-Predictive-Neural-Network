@@ -1,4 +1,9 @@
-# Title
+# Multi-Sensor E-Nose based on Trend Predictive Neural Network with Online Transfer Learning
+![Alt text](figures/e-rtpnn.png)
+
+This repository contains the implementation of the the e-rTPNN decision system. This model leverages the Recurrent Trend Predictive Neural Network (rTPNN) combined with online transfer learning for electronic nose (e-Nose) applications.
+
+The detailed explanation of the architecture and comparative results on wine and COPD e-Nose datasets can be found in our published article [link](link).
 
 ## Prepare the datasets
 ### Wine Dataset
