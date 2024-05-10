@@ -15,13 +15,17 @@ Run the following code, which will create COPD_Dataset_All folder and file_list.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](add link)
 
-## Train e-rtpnn on Wine Dataset
-For online training to be performed after the offline training set:
+## Train e-rtpnn
+For online training to be performed after the offline training, Set the online_only array:
 
 `online_only = [False, False, False, False, False]`
 
-For online only training set:
+To perform the online training only, Set the online_only array:
 
 `online_only = [True, True, True, True, True]`
 
+### Train on Wine Dataset
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1j29qxD0sQcV9sVq7zuBrtG4o2k_kJFz1?usp=sharing)
+
+### Train e-rtpnn on COPD Dataset
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Bikva_wEF_2qyhIpqVzfGwWw9986y08x?usp=sharing)
