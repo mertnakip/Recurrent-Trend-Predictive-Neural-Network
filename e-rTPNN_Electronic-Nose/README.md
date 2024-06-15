@@ -49,3 +49,16 @@ To perform the online training only, Set the online_only array:
   keywords={Market research;Transfer learning;Long short term memory;Feature extraction;Convolutional neural networks;Quality control;Electronic noses;Multisensor systems;Neural networks;E-Nose;trend prediction;multi-sensor;recurrent trend predictive neural network;online learning},
   doi={10.1109/ACCESS.2024.3401569}}
 ```
+
+```
+@ARTICLE{nakip2021rTPNN,  
+  author={Nakip, Mert and Güzeliş, Cüneyt and Yildiz, Osman},  
+  journal={IEEE Access},  
+  title={Recurrent Trend Predictive Neural Network for Multi-Sensor Fire Detection},  
+  year={2021},  
+  volume={9},  
+  number={},  
+  pages={84204-84216},  
+  doi={10.1109/ACCESS.2021.3087736}  
+  }
+  ```
