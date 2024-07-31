@@ -106,3 +106,17 @@ The rTPNN, as well as its application on multi-sensor fire detection, has been p
   url = {https://www.sciencedirect.com/science/article/pii/S0306261923003781}
 }
 ```
+
+###### rTPNN with Online Learning for E-Nose
+```
+@ARTICLE{bulucu_ertpnn,
+  author={Bulucu, Pervіn and Nakip, Mert and Güzelіș, Cüneyt},
+  journal={IEEE Access}, 
+  title={Multi-Sensor E-Nose Based on Online Transfer Learning Trend Predictive Neural Network}, 
+  year={2024},
+  volume={12},
+  number={},
+  pages={71442-71452},
+  keywords={Market research;Transfer learning;Long short term memory;Feature extraction;Convolutional neural networks;Quality control;Electronic noses;Multisensor systems;Neural networks;E-Nose;trend prediction;multi-sensor;recurrent trend predictive neural network;online learning},
+  doi={10.1109/ACCESS.2024.3401569}}
+```
